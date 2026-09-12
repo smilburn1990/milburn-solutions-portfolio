@@ -5,6 +5,16 @@ export default defineNuxtConfig({
 
   css: ["~/assets/styles/main.scss"],
 
+  // `npm run generate` prerenders these to real HTML. Listed explicitly so a
+  // route can never be silently dropped if link crawling misses it.
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/cv"],
+      failOnError: true
+    }
+  },
+
   app: {
     head: {
       htmlAttrs: { lang: "en-GB" },
