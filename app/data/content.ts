@@ -1,7 +1,7 @@
 export const profile = {
   name: "Sean Milburn",
   role: "CTO & Engineering Leader",
-  location: "Bristol · London · Remote",
+  location: "London · UK & Europe · Remote",
   email: "seanmilburn1990@gmail.com",
   phone: "+44 7854 156559",
   linkedin: "https://www.linkedin.com/in/sean-milburn-15625387",
